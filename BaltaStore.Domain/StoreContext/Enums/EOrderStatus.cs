@@ -1,4 +1,4 @@
-namespace BaltaStore.Domain.Enums
+namespace BaltaStore.Domain.StoreContext.Enums
 {
     public enum EOrderStatus
     {

@@ -6,8 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj" />
+    <ProjectReference Include="..\BaltaStore.Shared\BaltaStore.Shared.csproj" />
+    <ProjectReference Include="..\BaltaStore.Infra\BaltaStore.Infra.csproj" />
   </ItemGroup>
 
 </Project>

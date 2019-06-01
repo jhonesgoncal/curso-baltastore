@@ -1,9 +1,11 @@
 
-using BaltaStore.Domain.Enums;
+
+using BaltaStore.Domain.StoreContext.Enums;
+using BaltaStore.Shared.Entities;
 
 namespace BaltaStore.Domain.Entities
 {
-    public class Address
+    public class Address : Entity
     {
         public Address(string street, string number, string complement, string district, string city, string state, string country, string zipCode, EAddressType type)
         {

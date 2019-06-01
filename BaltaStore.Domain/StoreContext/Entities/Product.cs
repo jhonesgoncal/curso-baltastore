@@ -1,6 +1,8 @@
+using BaltaStore.Shared.Entities;
+
 namespace BaltaStore.Domain.StoreContext.Entities
 {
-    public class Product
+    public class Product : Entity
     {
 
         public Product(string title, string description, string image, decimal price, decimal quantityOnHand)
@@ -17,6 +19,11 @@ namespace BaltaStore.Domain.StoreContext.Entities
         public string Image { get; private set; }
         public decimal Price { get; private set; }
         public decimal QuantityOnHand { get; private set; }
+
+        public void DecreaseQuantity(decimal quantity)
+        {
+            QuantityOnHand -= quantity;
+        }
 
         public override string ToString()
         {

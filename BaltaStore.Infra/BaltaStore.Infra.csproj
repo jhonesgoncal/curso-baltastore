@@ -4,4 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaltaStore.Shared\BaltaStore.Shared.csproj" />
+    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
